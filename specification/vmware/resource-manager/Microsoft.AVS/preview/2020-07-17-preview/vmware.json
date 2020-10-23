@@ -2052,7 +2052,7 @@
     },
     "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.AVS/privateClouds/{privateCloudName}/workloadNetworks/default/gateways/{gatewayId}": {
       "get": {
-        "operationId": "WorkloadNetworks_GetGateways",
+        "operationId": "WorkloadNetworks_GetGateway",
         "tags": [
           "WorkloadNetworks"
         ],
@@ -2089,7 +2089,7 @@
           }
         },
         "x-ms-examples": {
-          "WorkloadNetworks_ListGateways": {
+          "WorkloadNetworks_GetGateway": {
             "$ref": "./examples/WorkloadNetworks_GetGateways.json"
           }
         }
@@ -2646,7 +2646,7 @@
     },
     "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.AVS/privateClouds/{privateCloudName}/workloadNetworks/default/virtualMachines/{virtualMachineId}": {
       "get": {
-        "operationId": "WorkloadNetworks_GetVirtualMachines",
+        "operationId": "WorkloadNetworks_GetVirtualMachine",
         "tags": [
           "WorkloadNetworks"
         ],
@@ -2683,7 +2683,7 @@
           }
         },
         "x-ms-examples": {
-          "WorkloadNetworks_ListVirtualMachines": {
+          "WorkloadNetworks_GetVirtualMachine": {
             "$ref": "./examples/WorkloadNetworks_GetVirtualMachines.json"
           }
         }
