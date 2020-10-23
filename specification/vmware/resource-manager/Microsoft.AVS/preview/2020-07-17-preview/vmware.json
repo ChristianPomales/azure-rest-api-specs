@@ -200,7 +200,7 @@
           "Locations"
         ],
         "description": "Lists all of the available storage policies",
-        "operationId": "DefaultStoragePolicies_List",
+        "operationId": "Locations_ListDefaultStoragePolicies",
         "x-ms-pageable": {
           "nextLinkName": "nextLink"
         },
