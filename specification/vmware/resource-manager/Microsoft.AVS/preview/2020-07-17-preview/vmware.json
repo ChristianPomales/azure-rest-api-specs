@@ -139,6 +139,22 @@
       "type": "string",
       "description": "NSX VM Group identifier. Generally the same as the VM Group's display name",
       "x-ms-parameter-location": "method"
+    },
+    "virtualMachineId": {
+      "name": "virtualMachineId",
+      "in": "path",
+      "required": true,
+      "type": "string",
+      "description": "NSX Virtual Machine identifier.",
+      "x-ms-parameter-location": "method"
+    },
+    "gatewayId": {
+      "name": "gatewayId",
+      "in": "path",
+      "required": true,
+      "type": "string",
+      "description": "NSX Gateway identifier. Generally the same as the Gateway's display name",
+      "x-ms-parameter-location": "method"
     }
   },
   "paths": {
@@ -2579,6 +2595,51 @@
         "x-ms-examples": {
           "WorkloadNetworks_ListVirtualMachines": {
             "$ref": "./examples/WorkloadNetworks_ListVirtualMachines.json"
+          }
+        }
+      }
+    },
+    "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.AVS/privateClouds/{privateCloudName}/workloadNetworks/default/virtualMachines/{virtualMachineId}": {
+      "get": {
+        "operationId": "WorkloadNetworks_GetVirtualMachines",
+        "tags": [
+          "WorkloadNetworks"
+        ],
+        "summary": "Get a virtual machine by id in a private cloud workload network.",
+        "parameters": [
+          {
+            "$ref": "../../../../../common-types/resource-management/v1/types.json#/parameters/SubscriptionIdParameter"
+          },
+          {
+            "$ref": "../../../../../common-types/resource-management/v1/types.json#/parameters/ResourceGroupNameParameter"
+          },
+          {
+            "$ref": "../../../../../common-types/resource-management/v1/types.json#/parameters/ApiVersionParameter"
+          },
+          {
+            "$ref": "#/parameters/privateCloudName"
+          },
+          {
+            "$ref": "#/parameters/virtualMachineId"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "successful operation",
+            "schema": {
+              "$ref": "#/definitions/WorkloadNetworkVirtualMachine"
+            }
+          },
+          "default": {
+            "description": "Error response describing why the operation failed",
+            "schema": {
+              "$ref": "#/definitions/CloudError"
+            }
+          }
+        },
+        "x-ms-examples": {
+          "WorkloadNetworks_ListVirtualMachines": {
+            "$ref": "./examples/WorkloadNetworks_GetVirtualMachines.json"
           }
         }
       }
