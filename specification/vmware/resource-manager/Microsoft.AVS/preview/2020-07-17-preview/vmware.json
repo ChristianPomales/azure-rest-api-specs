@@ -3705,9 +3705,11 @@
           "type": "string"
         },
         "subnet": {
+          "description": "Subnet which to connect segment to.",
           "$ref": "#/definitions/WorkloadNetworkSegmentSubnet"
         },
         "portVif": {
+          "description": "Port Vif which segment is associated with.",
           "type": "array",
           "items": {
             "$ref": "#/definitions/WorkloadNetworkSegmentPortVif"
@@ -3884,6 +3886,7 @@
       ],
       "properties": {
         "properties": {
+          "description": "DHCP properties.",
           "$ref": "#/definitions/WorkloadNetworkDhcpEntity",
           "x-ms-client-flatten": true
         }
@@ -3977,6 +3980,7 @@
       ],
       "properties": {
         "properties": {
+          "description": "Port Mirroring Properties.",
           "$ref": "#/definitions/WorkloadNetworkPortMirroringProperties",
           "x-ms-client-flatten": true
         }
@@ -4058,6 +4062,7 @@
       ],
       "properties": {
         "properties": {
+          "description": "VM Group properties.",
           "$ref": "#/definitions/WorkloadNetworkVMGroupProperties",
           "x-ms-client-flatten": true
         }
@@ -4111,6 +4116,7 @@
       ],
       "properties": {
         "properties": {
+          "description": "Virtual machine properties.",
           "$ref": "#/definitions/WorkloadNetworkVirtualMachineProperties",
           "x-ms-client-flatten": true
         }
@@ -4157,7 +4163,9 @@
       ],
       "properties": {
         "properties": {
-          "$ref": "#/definitions/WorkloadNetworkGatewayProperties"
+          "description": "Gateway properties.",
+          "$ref": "#/definitions/WorkloadNetworkGatewayProperties",
+          "x-ms-client-flatten": true
         }
       }
     },
