@@ -2090,7 +2090,7 @@
         },
         "x-ms-examples": {
           "WorkloadNetworks_GetGateway": {
-            "$ref": "./examples/WorkloadNetworks_GetGateways.json"
+            "$ref": "./examples/WorkloadNetworks_GetGateway.json"
           }
         }
       }
@@ -2684,7 +2684,7 @@
         },
         "x-ms-examples": {
           "WorkloadNetworks_GetVirtualMachine": {
-            "$ref": "./examples/WorkloadNetworks_GetVirtualMachines.json"
+            "$ref": "./examples/WorkloadNetworks_GetVirtualMachine.json"
           }
         }
       }
